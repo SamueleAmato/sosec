@@ -59,5 +59,5 @@ Contributions are welcome. Please open an issue to discuss major changes before 
 
 Join the official Discord server to discuss issues, get help, or contribute:
 
-[![Discord](https://img.shields.io/discord/your-server-id?logo=discord&color=7289DA&label=Discord)](https://discord.com/invite/3r6mkjv6AP)
+[Discord!](https://discord.com/invite/3r6mkjv6AP)
 
