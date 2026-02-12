@@ -3,9 +3,9 @@ socsec
 
 **sosec** is a command-line toolkit for automated credential testing and HTTP request orchestration on social media platforms. It enables structured interaction with platform endpoints through configurable workflows and input datasets. sosec supports Linux and Windows environments. 
 
-![](https://img.shields.io/github/stars/samueleamato/sosec)
-![](https://img.shields.io/github/forks/samueleamato/sosec)
-![](https://img.shields.io/github/issues/samueleamato/sosec)
+![Stars](https://img.shields.io/github/stars/samueleamato/sosec?style=flat)
+![Forks](https://img.shields.io/github/forks/samueleamato/sosec?style=flat)
+![Issues](https://img.shields.io/github/issues/samueleamato/sosec?style=flat)
 
 > [!WARNING]
 > This project is intended for educational and authorized testing purposes only. 
@@ -60,4 +60,5 @@ Contributions are welcome. Please open an issue to discuss major changes before 
 Join the official Discord server to discuss issues, get help, or contribute:
 
 ![Discord!](https://img.shields.io/badge/discord-[UPDATE]-7289DA?logo=discord&logoColor=white)
+
 
