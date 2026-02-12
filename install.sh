@@ -21,7 +21,7 @@ if [[ "$DISTRO" == "ubuntu" || "$DISTRO" == "debian" || "$DISTRO" == "kali" ]]; 
 elif [[ "$DISTRO" == "arch" ]]; then
     sudo pacman -Syu --noconfirm
     sudo pacman -S --noconfirm base-devel git python-pip
-    yay -S --noconfirm "https://github.com/$GITHUB_USER/$REPO/releases/download/$RELEASE_TAG/windscribe-cli.xbps"
+    yay -S windscribe-v2-bin
 elif [[ "$DISTRO" == "void" ]]; then
     sudo xbps-install -Sy python3-pip curl -y
     curl -sSL "https://github.com/$GITHUB_USER/$REPO/releases/download/$RELEASE_TAG/windscribe-cli.xbps" -o windscribe-cli.xbps
