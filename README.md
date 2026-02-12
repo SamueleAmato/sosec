@@ -34,7 +34,7 @@ If you are on **Windows**, you can install sosec with the following command:
 powershell -Command "Invoke-WebRequest -Uri https://github.com/samueleamato/sosec/archive/refs/heads/main.zip -OutFile main.zip; Expand-Archive main.zip -DestinationPath .; cd .\sosec-main\cmd; pip install -r requirements.txt; cd ..; start windows.bat"
 ```
 
-### Quick start
+### Quick Start
 
 Run the TUI interface:
 
