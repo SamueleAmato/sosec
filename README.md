@@ -1,5 +1,5 @@
 socsec 
-------------
+-----------
 
 sosec is a command-line toolkit for automated credential testing and HTTP request orchestration on social media platforms. It enables structured interaction with platform endpoints through configurable workflows and input datasets. sosec supports Linux and Windows environments. 
 
