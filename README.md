@@ -59,6 +59,8 @@ Contributions are welcome. Please open an issue to discuss major changes before 
 
 Join the official Discord server to discuss issues, get help, or contribute:
 
-![Discord!](https://img.shields.io/badge/discord-[UPDATE]-7289DA?logo=discord&logoColor=white)
+
+
+<a href="https://discord.com/invite/m4madyG7jp"><img src="https://img.shields.io/badge/discord-[UPDATE]-7289DA?logo=discord&logoColor=white"></a>
 
 
