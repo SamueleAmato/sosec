@@ -31,7 +31,7 @@ else
     exit 1
 fi
 
-windscribe login
+windscribe-cli login
 
 pip3 install -r cmd/requirements.txt
 
