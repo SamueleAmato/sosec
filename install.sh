@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-
 set -e
+
+GITHUB_USER="samueleamato"
+REPO="sosec"
+RELEASE_TAG="v1.0"
 
 if [ -f /etc/os-release ]; then
     . /etc/os-release
@@ -11,11 +14,18 @@ else
 fi
 
 if [[ "$DISTRO" == "ubuntu" || "$DISTRO" == "debian" || "$DISTRO" == "kali" ]]; then
+    sudo apt update -y
+    sudo apt install -y curl python3-pip
+    curl -sSL "https://github.com/$GITHUB_USER/$REPO/releases/download/$RELEASE_TAG/windscribe-cli.deb" -o windscribe-cli.deb
     sudo dpkg -i windscribe-cli.deb || sudo apt install -f -y
 elif [[ "$DISTRO" == "arch" ]]; then
-    yay -S --noconfirm windscribe-v2-bin
+    sudo pacman -Syu --noconfirm
+    sudo pacman -S --noconfirm base-devel git python-pip
+    yay -S --noconfirm "https://github.com/$GITHUB_USER/$REPO/releases/download/$RELEASE_TAG/windscribe-cli.xbps"
 elif [[ "$DISTRO" == "void" ]]; then
-    sudo dpkg -i windscribe-cli || xbps-install -y windscribe-cli
+    sudo xbps-install -Sy python3-pip curl -y
+    curl -sSL "https://github.com/$GITHUB_USER/$REPO/releases/download/$RELEASE_TAG/windscribe-cli.xbps" -o windscribe-cli.xbps
+    sudo xbps-install -y ./windscribe-cli.xbps
 else
     echo "Distribution not supported."
     exit 1
@@ -27,4 +37,3 @@ pip3 install -r cmd/requirements.txt
 
 chmod +x linux.sh
 ./linux.sh
-
