@@ -1,4 +1,0 @@
-- bruteforce
-- mass report
-- phishing
-    phishing is under manitence
