@@ -25,7 +25,7 @@ Licensed under MIT License.
 If you are on **Linux**, you can install sosec with the following command:
 
 ```
-git clone https://github.com/samueleamato/sosec && cd sosec && bash install.sh
+git clone https://github.com/samueleamato/sosec && cd sosec && bash setup.sh
 ```
 
 If you are on **Windows**, you can install sosec with the following command:

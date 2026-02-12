@@ -15,8 +15,8 @@ fi
 
 if [[ "$DISTRO" == "ubuntu" || "$DISTRO" == "debian" || "$DISTRO" == "kali" ]]; then
     sudo apt update -y
-    sudo apt install -y curl python3-pip
-    curl -sSL "https://github.com/$GITHUB_USER/$REPO/releases/download/$RELEASE_TAG/windscribe-cli.deb" -o windscribe-cli.deb
+    sudo apt install -y curl wget python3-pip
+    wget "https://github.com/SamueleAmato/sosec/releases/download/v1.0/windscribe-cli.deb"
     sudo dpkg -i windscribe-cli.deb || sudo apt install -f -y
 elif [[ "$DISTRO" == "arch" ]]; then
     sudo pacman -Syu --noconfirm
@@ -24,7 +24,7 @@ elif [[ "$DISTRO" == "arch" ]]; then
     yay -S windscribe-v2-bin
 elif [[ "$DISTRO" == "void" ]]; then
     sudo xbps-install -Sy python3-pip curl -y
-    curl -sSL "https://github.com/$GITHUB_USER/$REPO/releases/download/$RELEASE_TAG/windscribe-cli.xbps" -o windscribe-cli.xbps
+    wget "https://github.com/SamueleAmato/sosec/releases/download/v1.0/windscribe-cli.xbps"
     sudo xbps-install -y ./windscribe-cli.xbps
 else
     echo "Distribution not supported."
