@@ -20,7 +20,7 @@ socsec
 
 Licensed under MIT License.
 
-### installation
+### Installation
 
 If you are on **Linux**, you can install sosec with the following command:
 
