@@ -32,8 +32,6 @@ def handle_twitter(vpn_enabled):
 
 
 def main():
-    start()
-    
     vpn_choice = get_vpn_choice()
     vpn_enabled = vpn_choice == 1
     
